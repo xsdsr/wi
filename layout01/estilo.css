@@ -1,0 +1,242 @@
+/* Reset básico */
+/* Remove as margens e os paddings padrão de todos os elementos para começar com uma base uniforme */
+* {
+    /* Remove qualquer margem padrão dos elementos */
+    margin: 0;
+
+    /* Remove qualquer espaçamento interno padrão dos elementos */
+    padding: 0;
+
+    /* Garante que as bordas e os paddings sejam incluídos no tamanho total do elemento */
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+/* Define os estilos básicos do corpo da página */
+body {
+    /* Define uma fonte padrão para o texto */
+    font-family: Arial, sans-serif;
+
+    /* Define um espaçamento entre as linhas para facilitar a leitura */
+    line-height: 1.6;
+
+    /* Define a cor do texto como cinza escuro para um bom contraste */
+    color: #333;
+
+    /* Define uma cor de fundo neutra para a página */
+    background-color: #f8f8f8;
+
+    /* Usa Flexbox para organizar os elementos principais do layout */
+    display: flex;
+
+    /* Organiza os elementos em uma coluna vertical */
+    flex-direction: column;
+
+    /* Garante que o corpo ocupe pelo menos toda a altura da tela */
+    min-height: 100vh;
+}
+
+/* Container centralizado */
+/* Centraliza e limita a largura do conteúdo principal */
+.container {
+    /* Define a largura como 90% da tela */
+    width: 90%;
+
+    /* Limita a largura máxima do container */
+    max-width: 1200px;
+
+    /* Centraliza o container horizontalmente */
+    margin: 0 auto;
+
+    /* Adiciona espaçamento interno vertical */
+    padding: 20px 0;
+}
+
+/* Cabeçalho */
+/* Define os estilos do cabeçalho */
+header {
+    /* Define o fundo do cabeçalho como cinza escuro */
+    background-color: #444;
+
+    /* Define o texto do cabeçalho como branco */
+    color: white;
+
+    /* Adiciona espaçamento interno vertical */
+    padding: 20px 0;
+
+    /* Centraliza o texto no cabeçalho */
+    text-align: center;
+}
+
+/* Título no header */
+/* Estiliza o título principal dentro do cabeçalho */
+header h1 {
+    /* Adiciona espaço abaixo do título para separação visual */
+    margin-bottom: 10px;
+
+    /* Aumenta o tamanho da fonte do título */
+    font-size: 2rem;
+}
+
+/* Lista de navegação */
+/* Estiliza a lista que contém os links do menu de navegação */
+nav ul {
+    /* Remove os marcadores da lista (ex.: bolinhas) */
+    list-style: none;
+
+    /* Remove qualquer padding adicional da lista */
+    padding: 0;
+}
+
+/* Itens da lista */
+/* Define os estilos para os itens individuais do menu */
+nav ul li {
+    /* Exibe os itens do menu em uma única linha horizontal */
+    display: inline;
+
+    /* Adiciona espaço entre os itens */
+    margin: 0 15px;
+}
+
+/* Links da navegação */
+/* Define os estilos dos links dentro do menu */
+nav ul li a {
+    /* Define a cor dos links como branco */
+    color: white;
+
+    /* Remove o sublinhado padrão dos links */
+    text-decoration: none;
+
+    /* Deixa o texto dos links em negrito */
+    font-weight: bold;
+}
+
+/* Efeito ao passar o mouse */
+/* Estiliza os links quando o cursor do mouse passa sobre eles */
+nav ul li a:hover {
+    /* Adiciona um sublinhado ao link para indicar interação */
+    text-decoration: underline;
+}
+
+/* Layout principal */
+/* Define o layout principal com o conteúdo e a barra lateral */
+.layout {
+    /* Usa Flexbox para posicionar o conteúdo principal e o aside lado a lado */
+    display: flex;
+
+    /* Adiciona espaço entre os elementos do layout */
+    gap: 20px;
+}
+
+/* Conteúdo principal */
+/* Define os estilos para o conteúdo principal */
+.conteudo {
+    /* Faz o conteúdo principal ocupar 75% da largura do layout */
+    flex: 3;
+
+    /* Usa Flexbox para organizar as seções internamente */
+    display: flex;
+
+    /* Organiza as seções em uma coluna vertical */
+    flex-direction: column;
+
+    /* Adiciona espaço entre as seções */
+    gap: 20px;
+}
+
+/* Barra lateral */
+/* Define os estilos para a barra lateral */
+.sidebar {
+    /* Faz a barra lateral ocupar 25% da largura do layout */
+    flex: 1;
+
+    /* Define uma cor de fundo suave para a barra lateral */
+    background-color: #f4f4f4;
+
+    /* Adiciona espaçamento interno à barra lateral */
+    padding: 15px;
+
+    /* Adiciona uma borda sutil à barra lateral */
+    border: 1px solid #ddd;
+
+    /* Arredonda os cantos da borda */
+    border-radius: 5px;
+
+    /* Adiciona uma sombra leve para dar profundidade */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Seções */
+/* Define os estilos para as seções principais */
+.secao {
+    /* Define o fundo das seções como branco */
+    background-color: #fff;
+
+    /* Adiciona espaçamento interno às seções */
+    padding: 15px;
+
+    /* Adiciona uma borda sutil às seções */
+    border: 1px solid #ddd;
+
+    /* Arredonda os cantos da borda */
+    border-radius: 5px;
+
+    /* Adiciona uma sombra leve para separar visualmente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos das seções */
+/* Define os estilos para os títulos dentro das seções */
+.secao h2 {
+    /* Adiciona espaço abaixo do título para separação visual */
+    margin-bottom: 10px;
+
+    /* Define o tamanho da fonte do título */
+    font-size: 1.5rem;
+
+    /* Define a cor do título */
+    color: #444;
+}
+
+/* Rodapé */
+/* Define os estilos para o rodapé */
+footer {
+    /* Define o fundo do rodapé como cinza escuro */
+    background-color: #333;
+
+    /* Define o texto do rodapé como branco */
+    color: white;
+
+    /* Centraliza o texto dentro do rodapé */
+    text-align: center;
+
+    /* Adiciona espaçamento interno vertical ao rodapé */
+    padding: 15px 0;
+
+    /* Adiciona espaço acima do rodapé para separá-lo do conteúdo */
+    margin-top: 20px;
+}
+
+/* Texto do rodapé */
+/* Estiliza o texto simples dentro do rodapé */
+footer p {
+    /* Define o tamanho da fonte como menor */
+    font-size: 0.9rem;
+}
+
+/* Links no rodapé */
+/* Estiliza os links dentro do rodapé */
+footer a {
+    /* Define a cor dos links no rodapé como azul claro */
+    color: #61dafb;
+
+    /* Remove o sublinhado padrão dos links */
+    text-decoration: none;
+}
+
+/* Efeito ao passar o mouse */
+/* Estiliza os links no rodapé quando o cursor do mouse passa sobre eles */
+footer a:hover {
+    /* Adiciona sublinhado ao link para indicar interação */
+    text-decoration: underline;
+}
