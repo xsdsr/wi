@@ -118,3 +118,25 @@ footer a:hover {
     color: antiquewhite;
     text-decoration: underline;
 }
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Links na vertical */
+        text-align: left;
+        gap: 10px; /* Espaçamento entre os links */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Espaçamento entre os itens */
+    }
+
+    main {
+        flex-direction: column; /* Elementos empilhados */
+    }
+
+    aside {
+        margin-top: 20px; /* Espaço entre o conteúdo principal e o aside */
+    }
+}
