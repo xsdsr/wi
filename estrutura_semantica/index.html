@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Flexbox</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Página</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Layout principal -->
+    <main>
+        <!-- Seções principais -->
+        <div id="conteudo">
+            <section id="home">
+                <h2>Bem-vindo</h2>
+                <p>Este é o conteúdo principal da página. Explore nossos artigos e saiba mais sobre nós.</p>
+            </section>
+
+            <section id="sobre">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma equipe dedicada a oferecer conteúdo de qualidade para nossos leitores.</p>
+            </section>
+
+            <section id="artigos">
+                <h2>Artigos Recentes</h2>
+                <article>
+                    <h3>Como aprender HTML sem complicação</h3>
+                    <p>HTML é a base da web. Aprender seus fundamentos é essencial para qualquer desenvolvedor.</p>
+                </article>
+                <article>
+                    <h3>Dicas para dominar CSS</h3>
+                    <p>Descubra como usar CSS para criar layouts modernos e responsivos.</p>
+                </article>
+            </section>
+        </div>
+
+        <!-- Barra lateral -->
+        <aside>
+            <h4>Informações Complementares</h4>
+            <p>Dicas, links úteis ou propagandas para complementar o conteúdo principal.</p>
+        </aside>
+    </main>
+
+    <footer id="contato">
+        <p>&copy; 2024 Minha Página. Todos os direitos reservados. | <a href="#">Política de Privacidade</a>. | <a href="mailto:exemplo@email.com"> E-mail.</a></p>
+    </footer>
+</body>
+</html>
