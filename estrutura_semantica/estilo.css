@@ -44,22 +44,17 @@ nav ul li a:hover {
 
 /* Layout principal */
 main {
-    display: flex;
-    /* Flexbox no contêiner principal */
-    gap: 20px;
-    /* Espaço entre as colunas */
+    display: flex; /* Flexbox no contêiner principal */
+    gap: 20px; /* Espaço entre as colunas */
     padding: 20px;
 }
 
 /* Conteúdo principal */
 #conteudo {
-    flex: 3;
-    /* O conteúdo principal ocupa 3/4 da largura */
+    flex: 3; /* O conteúdo principal ocupa 3/4 da largura */
     display: flex;
-    flex-direction: column;
-    /* Empilha as seções verticalmente */
-    gap: 20px;
-    /* Espaçamento entre seções */
+    flex-direction: column; /* Empilha as seções verticalmente */
+    gap: 20px; /* Espaçamento entre seções */
 }
 
 /* Seções principais */
@@ -67,10 +62,8 @@ section {
     background: #f9f9f9;
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Sombra leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra deslocada 4px para baixo, com desfoque suave de 6px e transparência de 10% */
 }
 
 /* Artigos */
@@ -79,25 +72,19 @@ article {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Sombra leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra deslocada 4px para baixo, com desfoque suave de 6px e transparência de 10% */
 }
 
 /* Barra lateral */
 aside {
-    flex: 1;
-    /* O aside ocupa 1/4 da largura */
+    flex: 1; /* O aside ocupa 1/4 da largura */
     background: #f4f4f4;
     padding: 20px;
     border: 1px solid #ddd;
-    height: auto;
-    /* Faz o aside ocupar toda a altura do main */
-    border-radius: 8px;
-    /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Sombra leve */
+    height: auto; /* Faz o aside ocupar toda a altura do main */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra deslocada 4px para baixo, com desfoque suave de 6px e transparência de 10% */
 }
 
 /* Rodapé */
