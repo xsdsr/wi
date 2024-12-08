@@ -129,14 +129,15 @@ footer a:hover {
     }
 
     nav ul li {
-        margin: 5px 0; /* Espaçamento entre os itens */
+        margin: 4px 0; /* Espaçamento entre os itens */
     }
 
     main {
         flex-direction: column; /* Elementos empilhados */
     }
 
-    aside {
-        margin-top: 20px; /* Espaço entre o conteúdo principal e o aside */
+    footer
+    {
+        padding: 10px 20px;
     }
 }
