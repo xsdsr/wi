@@ -44,7 +44,7 @@ nav ul li a:hover {
 
 /* Layout principal */
 main {
-    /* Flexbox no contêiner principal */
+    /* Flexbox no contêiner principal - flex-direction: row */
     display: flex;
     /* Espaço entre as colunas */
     gap: 20px;
@@ -56,7 +56,7 @@ main {
     /* O conteúdo principal ocupa 3/4 da largura */
     flex: 3;
     display: flex;
-    /* Empilha as seções verticalmente */
+    /* Empilha as seções verticalmente - uma coluna*/
     flex-direction: column;
     /* Espaçamento entre seções */
     gap: 20px;
